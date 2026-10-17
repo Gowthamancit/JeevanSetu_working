@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-bg-primary: #0f0f0f;
+  --color-bg-secondary: #111111;
+  --color-bg-card: #1c1c1c;
+  --color-bg-elevated: #242424;
+  --color-bg-input: #1a1a1a;
+  --color-border-main: #2e2e2e;
+  --color-border-subtle: #1f1f1f;
+
+  --color-brand-primary: #3ecf8e;
+  --color-brand-hover: #2eb87a;
+  --color-brand-muted: #0d2b1e;
+
+  --color-purple-accent: #7c3aed;
+  --color-purple-hover: #6d28d9;
+  --color-purple-muted: #1e1030;
+
+  --color-text-primary: #ededed;
+  --color-text-secondary: #a0a0a0;
+  --color-text-muted: #555555;
+
+  --color-success: #3ecf8e;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+
+  /* Blood group badge colors */
+  --color-blood-aplus: #ef4444;
+  --color-blood-aminus: #f87171;
+  --color-blood-bplus: #3b82f6;
+  --color-blood-bminus: #60a5fa;
+  --color-blood-oplus: #10b981;
+  --color-blood-ominus: #34d399;
+  --color-blood-abplus: #8b5cf6;
+  --color-blood-abminus: #a78bfa;
+}
+
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #444444;
+}
+
+/* Base resets and defaults */
+html, body {
+  background-color: #0f0f0f;
+  color: #ededed;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
